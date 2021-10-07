@@ -2,9 +2,12 @@
   "name": "rescript-project-template",
   "version": "0.0.1",
   "scripts": {
+    "start": "vite",
+    "release": "vite build",
     "build": "rescript",
-    "clean": "rescript clean -with-deps",
-    "start": "rescript build -w"
+    "build:deps": "rescript build -with-deps",
+    "build:watch": "rescript build -w",
+    "clean": "rescript clean -with-deps"
   },
   "keywords": [
     "rescript"
@@ -12,6 +15,13 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@rescript/react": "^0.10.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "rescript": "*"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react-refresh": "^1.3.6",
+    "vite": "^2.6.5"
   }
 }
